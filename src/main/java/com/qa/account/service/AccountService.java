@@ -11,7 +11,7 @@ public class AccountService {
 	
 	public AccountService()
 	{
-		accountMap = new HashMap<>();
+		accountMap = new HashMap<Integer,Account>();
 	}
 	
 	public void addAccountToMap(Account accountToAdd)
