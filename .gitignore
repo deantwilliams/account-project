@@ -3,3 +3,5 @@ target/
 .classpath
 .project
 src/test/*
+sonar-project.properties
+.scannerwork

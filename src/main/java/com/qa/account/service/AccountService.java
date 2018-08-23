@@ -29,4 +29,10 @@ public class AccountService {
 	{
 		return accountMap.get(indexOfAccount);
 	}
+
+	public Map<Integer, Account> getAccountMap() {
+		return accountMap;
+	}
+	
+	
 }
