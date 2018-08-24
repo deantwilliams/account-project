@@ -34,5 +34,16 @@ public class AccountTest {
 		String searchFirstName = "Dean";
 		assertEquals(3,service.FindNumberOfFirstName(searchFirstName));
 	}
-
+	
+	@Test
+	public void NumberOfUsersInMap_LowerCase_Test() {
+		String searchFirstName = "dean";
+		assertEquals(3,service.FindNumberOfFirstName(searchFirstName));
+	}
+	
+	@Test
+	public void NumberOfUsersInMap_UpperCase_Test() {
+		String searchFirstName = "DEAN";
+		assertEquals(3,service.FindNumberOfFirstName(searchFirstName));
+	}
 }
