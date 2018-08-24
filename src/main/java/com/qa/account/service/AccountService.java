@@ -36,7 +36,7 @@ public class AccountService {
 
 	public int FindNumberOfFirstName(String searchFirstName) {
 		
-		return (int) accountMap.values().stream().filter(each -> each.getFirstName().equals(searchFirstName)).count();
+		return (int) accountMap.values().stream().filter(each -> each.getFirstName().toLowerCase().equals(searchFirstName.toLowerCase())).count();
 		
 		//		int nameCounter = 0;
 //		for(Account account : accountMap.values())
