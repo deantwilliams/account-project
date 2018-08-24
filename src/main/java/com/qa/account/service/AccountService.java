@@ -33,6 +33,18 @@ public class AccountService {
 	public Map<Integer, Account> getAccountMap() {
 		return accountMap;
 	}
+
+	public int FindNumberOfFirstName(String searchFirstName) {
+		int nameCounter = 0;
+		for(Account account : accountMap.values())
+		{
+			if(account.getFirstName().toLowerCase().equals(searchFirstName.toLowerCase()))
+			{
+				nameCounter++;
+			}
+		}
+		return nameCounter;
+	}
 	
 	
 }
