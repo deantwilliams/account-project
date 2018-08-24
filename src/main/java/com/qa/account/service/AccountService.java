@@ -38,7 +38,7 @@ public class AccountService {
 		int nameCounter = 0;
 		for(Account account : accountMap.values())
 		{
-			if(account.getFirstName().equals(searchFirstName))
+			if(account.getFirstName().toLowerCase().equals(searchFirstName.toLowerCase()))
 			{
 				nameCounter++;
 			}
