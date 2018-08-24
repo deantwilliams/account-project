@@ -35,15 +35,15 @@ public class AccountService {
 	}
 
 	public int FindNumberOfFirstName(String searchFirstName) {
-		int counter = 0;
+		int nameCounter = 0;
 		for(Account account : accountMap.values())
 		{
 			if(account.getFirstName().equals(searchFirstName))
 			{
-				counter++;
+				nameCounter++;
 			}
 		}
-		return counter;
+		return nameCounter;
 	}
 	
 	

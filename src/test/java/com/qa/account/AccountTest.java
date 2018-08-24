@@ -32,8 +32,7 @@ public class AccountTest {
 	@Test
 	public void NumberOfUsersInMap_Test() {
 		String searchFirstName = "Dean";
-		int nameCount = service.FindNumberOfFirstName(searchFirstName);
-		assertEquals(3,nameCount);
+		assertEquals(3,service.FindNumberOfFirstName(searchFirstName));
 	}
 
 }
